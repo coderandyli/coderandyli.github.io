@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1.测试代码https://github.com/coderandyli/Junit-Pooling   2.知识点：(example：JunitTest.java) 　  1.@Test: 测试方法  　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过  　　　　b)(timeout=100)如果程序的执行能在1">
 <meta name="keywords" content="李振">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/08/12/hello-world/index.html">
+<meta property="og:title" content="Junit使用汇总">
+<meta property="og:url" content="http://yoursite.com/2018/08/13/Junit使用汇总/index.html">
 <meta property="og:site_name" content="coderandyli&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1.测试代码https://github.com/coderandyli/Junit-Pooling   2.知识点：(example：JunitTest.java) 　  1.@Test: 测试方法  　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过  　　　　b)(timeout=100)如果程序的执行能在1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-12T10:24:57.000Z">
+<meta property="og:updated_time" content="2018-09-02T13:30:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Junit使用汇总">
+<meta name="twitter:description" content="1.测试代码https://github.com/coderandyli/Junit-Pooling   2.知识点：(example：JunitTest.java) 　  1.@Test: 测试方法  　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过  　　　　b)(timeout=100)如果程序的执行能在1">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/12/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/13/Junit使用汇总/"/>
 
 
 
 
 
-  <title>Hello World | coderandyli's blog</title>
+  <title>Junit使用汇总 | coderandyli's blog</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/Junit使用汇总/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="coderandyli">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Junit使用汇总</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T18:24:57+08:00">
-                2018-08-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-13T16:54:49+08:00">
+                2018-08-13
               </time>
             
 
@@ -309,6 +309,17 @@
           
 
           
+          
+             <span id="/2018/08/13/Junit使用汇总/" class="leancloud_visitors" data-flag-title="Junit使用汇总">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -330,15 +341,34 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="1-测试代码"><a href="#1-测试代码" class="headerlink" title="1.测试代码"></a>1.测试代码</h3><p><a href="https://github.com/coderandyli/Junit-Pooling" target="_blank" rel="noopener">https://github.com/coderandyli/Junit-Pooling</a><br>  </p>
+<h3 id="2-知识点：-example：JunitTest-java"><a href="#2-知识点：-example：JunitTest-java" class="headerlink" title="2.知识点：(example：JunitTest.java)"></a>2.知识点：(example：JunitTest.java)</h3><pre><code> 　  1.@Test: 测试方法
+ 　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过
+ 　　　　b)(timeout=100)如果程序的执行能在100毫秒之内完成，则测试通过
+
+ 　　2.@Ignore: 被忽略的测试方法：加上之后，暂时不运行此段代码
+
+ 　　3.@Before: 每一个测试方法之前运行
+
+ 　　4.@After: 每一个测试方法之后运行
+
+ 　　5.@BeforeClass: 方法必须必须要是静态方法（static 声明），所有测试开始之前运行，注意区分before，是所有测试方法
+
+ 　　6.@AfterClass: 方法必须要是静态方法（static 声明），所有测试结束之后运行，注意区分 @After
+</code></pre><h3 id="3-编写测试类的原则-example：JunitTest-java"><a href="#3-编写测试类的原则-example：JunitTest-java" class="headerlink" title="3.编写测试类的原则(example：JunitTest.java)"></a>3.编写测试类的原则(example：JunitTest.java)</h3><pre><code>①测试方法上必须使用@Test进行修饰
+
+②测试方法必须使用public void 进行修饰，不能带任何的参数
+
+③新建一个源代码目录来存放我们的测试代码，即将测试代码和项目业务代码分开
+
+④测试类所在的包名应该和被测试类所在的包名保持一致
+
+⑤测试单元中的每个方法必须可以独立测试，测试方法间不能有任何的依赖
+
+⑥测试类使用Test作为类名的后缀（不是必须）
+
+⑦测试方法使用test作为方法名的前缀（不是必须）   
+</code></pre><h3 id="4-参考链接"><a href="#4-参考链接" class="headerlink" title="4.参考链接"></a>4.参考链接</h3><p><a href="https://www.cnblogs.com/ysocean/p/6889906.html#_label1" target="_blank" rel="noopener">https://www.cnblogs.com/ysocean/p/6889906.html#_label1</a><br> </p>
 
       
     </div>
@@ -359,22 +389,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/12/Junit-Pooling/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -452,7 +466,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -505,7 +519,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-测试代码"><span class="nav-number">1.</span> <span class="nav-text">1.测试代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-知识点：-example：JunitTest-java"><span class="nav-number">2.</span> <span class="nav-text">2.知识点：(example：JunitTest.java)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-编写测试类的原则-example：JunitTest-java"><span class="nav-number">3.</span> <span class="nav-text">3.编写测试类的原则(example：JunitTest.java)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-参考链接"><span class="nav-number">4.</span> <span class="nav-text">4.参考链接</span></a></li></ol></div>
             
 
           </div>
@@ -703,6 +717,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("nBDiyepYQT8fR5mXDmbeIa4d-gzGzoHsz", "jrDMG9b0wCOWp8ui9t5pjSLM");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
