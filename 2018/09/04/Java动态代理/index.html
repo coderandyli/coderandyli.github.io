@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="CoderAndyLi&#39;s Blog">
 <meta property="og:description" content="代理最近在学习 Spring 框架，AOP涉及到动态代理的知识，故整理一下，了解动态代理之前，我们首先应该了解下什么是代理（或者说静态代理）。 代理是基本的设计模式之一，它是你为了提供额外的或不同的操作，而插入的用来代替的&amp;quot;实际&amp;quot;对象的 对象，这些操作通常涉及与&amp;quot;实际&amp;quot;对象的通信，因此代理通常充当着中间人的角色。 当我们希望跟踪对方法的调用，或者希望度量这些">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-09T11:15:07.000Z">
+<meta property="og:updated_time" content="2018-09-09T11:58:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java动态代理">
 <meta name="twitter:description" content="代理最近在学习 Spring 框架，AOP涉及到动态代理的知识，故整理一下，了解动态代理之前，我们首先应该了解下什么是代理（或者说静态代理）。 代理是基本的设计模式之一，它是你为了提供额外的或不同的操作，而插入的用来代替的&amp;quot;实际&amp;quot;对象的 对象，这些操作通常涉及与&amp;quot;实际&amp;quot;对象的通信，因此代理通常充当着中间人的角色。 当我们希望跟踪对方法的调用，或者希望度量这些">
@@ -431,24 +431,16 @@ public Object getProxyInstance(){
 }
 </code></pre><p>}</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">测试</span><br></pre></td></tr></table></figure>
-<pre><code>@Test
-public void test(){
-    Student student = new Student();
-    ProxyFactory proxyFactory = new ProxyFactory(student);
-    Behavior behavior = (Behavior)proxyFactory.getProxyInstance();
-    System.out.println(&quot;\n&quot;);
-    System.out.println(behavior.getClass().getName());
-    System.out.println(&quot;\n&quot;);
+<p>@Test<br>public void test(){<br>    Student student = new Student();<br>    ProxyFactory proxyFactory = new ProxyFactory(student);<br>    Behavior behavior = (Behavior)proxyFactory.getProxyInstance();<br>    System.out.println(“\n”);<br>    System.out.println(behavior.getClass().getName());<br>    System.out.println(“\n”);</p>
+<pre><code>behavior.eat();
 
-    behavior.eat();
+System.out.println(&quot;\n&quot;);
+System.out.println(&quot;=========================== 看 我 华 不 华 丽 ================================&quot;);
+System.out.println(&quot;\n&quot;);
 
-    System.out.println(&quot;\n&quot;);
-    System.out.println(&quot;=========================== 看 我 华 不 华 丽 ================================&quot;);
-    System.out.println(&quot;\n&quot;);
-
-    behavior.say(&quot;hello,teacher&quot;);
-}
-</code></pre><p><code>`</code></p>
+behavior.say(&quot;hello,teacher&quot;);
+</code></pre><p>}</p>
+<p><code>`</code></p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>1.<a href="http://www.cnblogs.com/xiaoluo501395377/p/3383130.html" target="_blank" rel="noopener">java的动态代理机制详解</a> 以及文章的评论使我受益匪浅</p>
 <p>2.<a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener"> Java Platform SE 8</a></p>
 <p>3.《Thinking In Java》</p>
